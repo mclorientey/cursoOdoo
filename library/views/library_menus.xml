@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	  <menuitem
+            id="library_menu_root"
+            name="Library"
+            web_icon="library,static/src/img/icono.png"
+            sequence="0"
+             />
+            
+        <!-- Reserva -->
+        <menuitem 
+        	id="library_booking" 
+        	name="Booking"
+        	parent="library_menu_root" 
+        	action="library_booking_action"
+         	sequence="1"/>
+        
+        <!-- Ajustes -->
+        <menuitem
+            id="library_settings"
+            name="Settings"
+            parent="library_menu_root"
+            sequence="1" 
+            /> 
+            
+        <menuitem 
+        	id="library_book_category" 
+        	name="Book Category"
+        	parent="library_settings" 
+        	action="library_book_category_action"
+         	sequence="1"/>
+         	
+         <menuitem 
+        	id="library_book" 
+        	name="Book"
+        	parent="library_settings" 
+        	action="library_book_action"
+         	sequence="2"/>
+</odoo>
+
+

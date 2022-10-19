@@ -20,7 +20,8 @@
     
     # always loaded
     'data': [   
-        'views/library_actions.xml',                 
+        'views/library_actions.xml',
+        'views/library_menus.xml',
     ],
     'qweb': [
         

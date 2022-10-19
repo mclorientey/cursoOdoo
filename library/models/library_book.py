@@ -6,10 +6,10 @@
 from odoo import api, fields, models, _
 
 
-class libraryBookCategory(models.Model):
-    """ Modelo para definir las distintas categorías de un libro """
-    _name = "library.book.category"
-    _description = "Book Categories"
+class libraryBook(models.Model):
+    """ Modelo para definir los libros """
+    _name = "library.book"
+    _description = "Book"
     _order = "name desc"
     
     name = fields.Char('Nombre')
