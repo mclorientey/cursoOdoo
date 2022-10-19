@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	  <data>
+			<record id="library_category_book_form_view" model="ir.ui.view">
+				<field name="name">Library Category Book Form view</field>
+				<field name="model">library.book.category</field>
+				<field name="arch" type="xml">
+					<form string="Library Category Book">
+						<sheet>
+							<group>
+								<field name="name" />
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+	
+			<record id="library_category_book_tree_view" model="ir.ui.view">
+				<field name="name">Library Category Book Tree view</field>
+				<field name="model">library.book.category</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="name"></field>
+					</tree>
+				</field>
+			</record>
+		</data>
+</odoo>
+
+
