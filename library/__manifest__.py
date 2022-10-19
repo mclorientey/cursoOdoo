@@ -19,7 +19,8 @@
                 ],
     
     # always loaded
-    'data': [                    
+    'data': [   
+        'views/library_actions.xml',                 
     ],
     'qweb': [
         

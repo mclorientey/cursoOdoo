@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record model="ir.actions.act_window" id="library_booking_action">
+		<field name="name">Booking Access</field>
+		<field name="res_model">library.booking</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="library_book_category_action">
+		<field name="name">Category Book Access</field>
+		<field name="res_model">library.book.category</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
+	<record model="ir.actions.act_window" id="library_book_action">
+		<field name="name">Book Access</field>
+		<field name="res_model">library.book</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+</odoo>
+
+
