@@ -7,9 +7,29 @@
 				<field name="arch" type="xml">
 					<form string="Library Book">
 						<sheet>
-							<group>
-								<field name="name" />
+							<group name="view_name" col="1">
+								<field name="name" class="oe_inline" />
 							</group>
+							<group>
+								<group>
+									<field name="title"/>
+									<field name="author"/>
+									<field name="editorial"/>
+								</group>
+								<group>
+									<field name="year"/>
+									<field name="pages"/>
+									<field name="book"/>
+								</group>
+							</group>
+							<notebook>
+                        		<page string="Synopsis" name="synopsis">
+                        			<field name="synopsis"/>
+                        		</page>
+                        		<page string="Categories" name="categories">
+                        			<field name="categ_ids"/>
+                        		</page>
+                        	</notebook>
 						</sheet>
 					</form>
 				</field>
@@ -19,8 +39,12 @@
 				<field name="name">Library Book Tree view</field>
 				<field name="model">library.book</field>
 				<field name="arch" type="xml">
-					<tree>
-						<field name="name"></field>
+					<tree string="Books">
+						<field name="title"/>
+						<field name="author"/>
+						<field name="year"/>
+						<field name="pages"/>
+						<field name="editorial"/>
 					</tree>
 				</field>
 			</record>
