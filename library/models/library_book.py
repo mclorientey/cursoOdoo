@@ -47,7 +47,7 @@ class libraryBook(models.Model):
         array_years = []
         for it_year in range(2016, year):
             array_years.append((str(it_year),str(it_year)))
-            print (array_years)
+            #print (array_years)
         return array_years
             
     
