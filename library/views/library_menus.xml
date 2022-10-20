@@ -13,7 +13,7 @@
         	name="Booking"
         	parent="library_menu_root" 
         	action="library_booking_action"
-         	sequence="1"/>
+         	sequence="0"/>
         
         <!-- Ajustes -->
         <menuitem
