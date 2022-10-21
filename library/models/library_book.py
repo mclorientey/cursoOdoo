@@ -4,6 +4,7 @@
 # Copyright (c) 2005-2006 Axelor SARL. (http://www.axelor.com)
 
 from odoo import api, fields, models, _
+from odoo.exceptions import ValidationError
 import datetime
 
 
@@ -49,5 +50,11 @@ class libraryBook(models.Model):
             array_years.append((str(it_year),str(it_year)))
             #print (array_years)
         return array_years
-            
+    
+    @api.constrains('title','year')
+    def _check_title_year(self):
+        if self.title and self.year:
+            num_books = self.env['library.book'].search_count([('title','=',self.title),('year','=', self.year)])
+            if num_books > 1:
+                raise ValidationError("You can't create a book with this title and year")
     
