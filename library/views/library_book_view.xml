@@ -19,7 +19,7 @@
 								<group>
 									<field name="year"/>
 									<field name="pages"/>
-									<field name="book"/>
+									<field name="book" />
 								</group>
 							</group>
 							<notebook>

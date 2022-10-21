@@ -22,7 +22,7 @@ class libraryBooking(models.Model):
     start_date = fields.Date('Start date', help='The start date of reservation',default=fields.Date.context_today)
     end_date = fields.Date('End date', help='The end date of reservation')
     state = fields.Selection ([('draft','Draft'),('approved','Approved'),('reserved','Reserved'),('expired','Expired'),('reject','Reject')], default="draft")
-    
+    categ_id = fields.Integer('Categ Hidden field', compute='_calculate_categ_id')
     
     
     @api.depends('book_id','employee_id')
@@ -35,4 +35,20 @@ class libraryBooking(models.Model):
             if self.book_id and self.book_id.name:
                 value += self.book_id.name
             self.name = value
-    
+   
+   
+   
+    '''  DEPRECATED
+    @api.onchange('category_id')
+    def domain_book(self):
+        if self.category_id:
+            return {'domain': {'book_id': [('categ_ids', 'in', self.category_id.id)]}}
+    '''
+            
+    @api.depends('category_id')
+    def _calculate_categ_id(self):
+        for record in self:
+            if record.category_id:
+                record.categ_id =record.category_id.id
+            else:
+                record.categ_id = record.category_id.id
