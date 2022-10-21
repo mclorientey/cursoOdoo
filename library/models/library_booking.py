@@ -18,11 +18,11 @@ class libraryBooking(models.Model):
     name = fields.Char('Name',compute='_calculate_name', help='Computed field with employee and book name')
     employee_id = fields.Many2one('hr.employee','Employee', default=_default_employee, help='Computed field with title and author')
     category_id = fields.Many2one('library.book.category','Category',help='Category to filter books')
-    book_id = fields.Many2one('library.book','Book',help='The book for booking')
+    book_id = fields.Many2one('library.book','Book',help='The book for booking', domain="[('categ_ids','in',category_id)]")
     start_date = fields.Date('Start date', help='The start date of reservation',default=fields.Date.context_today)
     end_date = fields.Date('End date', help='The end date of reservation')
     state = fields.Selection ([('draft','Draft'),('approved','Approved'),('reserved','Reserved'),('expired','Expired'),('reject','Reject')], default="draft")
-    categ_id = fields.Integer('Categ Hidden field', compute='_calculate_categ_id')
+    #categ_id = fields.Integer('Categ Hidden field', compute='_calculate_categ_id')
     
     
     @api.depends('book_id','employee_id')
@@ -43,7 +43,7 @@ class libraryBooking(models.Model):
     def domain_book(self):
         if self.category_id:
             return {'domain': {'book_id': [('categ_ids', 'in', self.category_id.id)]}}
-    '''
+    
             
     @api.depends('category_id')
     def _calculate_categ_id(self):
@@ -51,4 +51,5 @@ class libraryBooking(models.Model):
             if record.category_id:
                 record.categ_id =record.category_id.id
             else:
-                record.categ_id = record.category_id.id
+                record.categ_id = 0
+    '''
