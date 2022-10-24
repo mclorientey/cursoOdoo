@@ -5,7 +5,7 @@
 				<field name="name">Library Review Form view</field>
 				<field name="model">library.review</field>
 				<field name="arch" type="xml">
-					<form string="Library Review">
+					<form string="Library Review" edit="0" duplicate="0">
 						<sheet>
 							<group>
 								<field name="employee_id" widget="many2one_avatar_employee"/>
@@ -24,10 +24,13 @@
 				<field name="name">Library Review Tree view</field>
 				<field name="model">library.review</field>
 				<field name="arch" type="xml">
-					<tree string="Reviews">
+					<tree string="Reviews" decoration-success="rating == '5'" decoration-info="rating == '4'"
+										   decoration-primary="rating == '3'" decoration-warning="rating == '2'"
+										   decoration-danger="rating == '1'" edit="0">
 						<field name="employee_id" widget="many2one_avatar_employee"/>
 						<field name="book_id"/>
 						<field name="rating"/>
+						<field name="rating" string="stars" widget="priority"/>
 					</tree>
 				</field>
 			</record>
