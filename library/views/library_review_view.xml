@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	  <data>
+			<record id="library_review_form_view" model="ir.ui.view">
+				<field name="name">Library Review Form view</field>
+				<field name="model">library.review</field>
+				<field name="arch" type="xml">
+					<form string="Library Review">
+						<sheet>
+							<group>
+								<field name="employee_id" widget="many2one_avatar_employee"/>
+								<field name="book_id"/>
+								<field name="rating" widget="priority"/>
+							</group>
+							<group>
+                        		<field name="text"/>
+                        	</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+	
+			<record id="library_review_tree_view" model="ir.ui.view">
+				<field name="name">Library Review Tree view</field>
+				<field name="model">library.review</field>
+				<field name="arch" type="xml">
+					<tree string="Reviews">
+						<field name="employee_id" widget="many2one_avatar_employee"/>
+						<field name="book_id"/>
+						<field name="rating"/>
+					</tree>
+				</field>
+			</record>
+		</data>
+</odoo>
+
+
