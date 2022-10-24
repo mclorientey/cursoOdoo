@@ -14,13 +14,20 @@
         	parent="library_menu_root" 
         	action="library_booking_action"
          	sequence="0"/>
+         	
+         <menuitem 
+        	id="library_review" 
+        	name="Review"
+        	parent="library_menu_root" 
+        	action="library_review_action"
+         	sequence="1"/>
         
         <!-- Ajustes -->
         <menuitem
             id="library_settings"
             name="Settings"
             parent="library_menu_root"
-            sequence="1" 
+            sequence="2" 
             /> 
             
         <menuitem 

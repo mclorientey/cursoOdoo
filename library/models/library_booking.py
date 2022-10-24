@@ -16,7 +16,7 @@ class libraryBooking(models.Model):
         return self.env.user.employee_ids[0].id
     
     name = fields.Char('Name',compute='_calculate_name', help='Computed field with employee and book name')
-    employee_id = fields.Many2one('hr.employee','Employee', default=_default_employee, help='Computed field with title and author')
+    employee_id = fields.Many2one('hr.employee','Employee', default=_default_employee, help='Employee name')
     category_id = fields.Many2one('library.book.category','Category',help='Category to filter books')
     book_id = fields.Many2one('library.book','Book',help='The book for booking', required=True, domain="[('categ_ids','in',category_id)]")
     start_date = fields.Date('Start date', help='The start date of reservation',default=fields.Date.context_today,required=True)

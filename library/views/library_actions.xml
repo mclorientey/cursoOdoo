@@ -18,6 +18,12 @@
 		<field name="view_mode">tree,form</field>
 	</record>
 	
+	<record model="ir.actions.act_window" id="library_review_action">
+		<field name="name">Review Access</field>
+		<field name="res_model">library.review</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
 	
 	<!-- Acciones de servidor para suplir la constraint de código -->
         

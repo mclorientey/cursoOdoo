@@ -30,6 +30,7 @@ class libraryBook(models.Model):
         string="Categories", help='All teh categories of the book'
     )
     book = fields.Binary('Book File', required=True, help='File with the book')
+    reviews_id = fields.One2many('library.review','book_id','Reviews from book')
     
     @api.depends('title','author')
     def _calculate_name(self):

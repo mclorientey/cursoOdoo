@@ -26,6 +26,7 @@
         'views/library_book_view.xml',                         
         'views/library_booking_view.xml',
         'views/library_category_book_view.xml',
+        'views/library_review_view.xml',
     ],
     'qweb': [
         
