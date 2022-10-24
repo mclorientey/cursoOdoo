@@ -17,6 +17,25 @@
 		<field name="res_model">library.book</field>
 		<field name="view_mode">tree,form</field>
 	</record>
+	
+	
+	<!-- Acciones de servidor para suplir la constraint de código -->
+        
+	<record model="ir.actions.server" id="constraint_create_book_same_title_and_year">
+    	<field name="name">Constraint book with same title and year</field>
+        <field name="model_id" ref="library.model_library_book"/>
+        <field name="binding_model_id" ref="library.model_library_book"/>
+        <field name="state">code</field>
+        <field name="code">
+log('Entro en la acción', level='info')
+if record.author:
+	num_books = env['library.book'].search_count([('author','=',record.author)])
+	log('Numero registros %s'%num_books, level='info')
+	if num_books > 1:
+		raise Warning('%s Books have the same author'%str(num_books))
+
+        </field>
+    </record>
 </odoo>
 
 

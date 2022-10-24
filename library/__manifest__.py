@@ -15,7 +15,7 @@
     'version': '14.0.1.0.0',
     'installable': True,
     'application': True,
-    'depends': ['base',
+    'depends': ['base','mail'
                 ],
     
     # always loaded

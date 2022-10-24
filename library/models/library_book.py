@@ -54,7 +54,7 @@ class libraryBook(models.Model):
     @api.constrains('title','year')
     def _check_title_year(self):
         if self.title and self.year:
-            num_books = self.env['library.book'].search_count([('title','=',self.title),('year','=', self.year)])
-            if num_books > 1:
+            num_books = self.env['library.book'].search_count([('title','=',self.title),('year','=', self.year),('id','!=',self.id)])
+            if num_books > 0:
                 raise ValidationError("You can't create a book with this title and year")
     
