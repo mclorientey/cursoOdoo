@@ -9,7 +9,7 @@
 						<sheet>
 							<group>
 								<field name="employee_id" widget="many2one_avatar_employee"/>
-								<field name="book_id"/>
+								<field name="book_id" options="{'no_create_edit':True,'no_quick_create':True,'no_create':True,'no_open':True}"/>
 								<field name="rating" widget="priority"/>
 							</group>
 							<group>
