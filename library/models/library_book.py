@@ -31,6 +31,7 @@ class libraryBook(models.Model):
     )
     book = fields.Binary('Book File', required=True, help='File with the book')
     reviews_id = fields.One2many('library.review','book_id','Reviews from book')
+    num_booking = fields.Integer('Bookings', compute='_calculate_num_of_bookigs')
     
     @api.depends('title','author')
     def _calculate_name(self):
@@ -59,3 +60,19 @@ class libraryBook(models.Model):
             if num_books > 0:
                 raise ValidationError("You can't create a book with this title and year")
             
+    def view_all_book_bookings(self):
+        self.ensure_one()
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Bookings',
+            'view_mode': 'tree',
+            'res_model': 'library.booking',
+            'domain': [('book_id', '=', self.id)],
+        }
+    
+    def _calculate_num_of_bookigs(self):
+        num = 0
+        bookings = self.env['library.booking'].search_count([('book_id','=',self.id)])
+        if bookings > 0:
+            num = bookings
+        self.num_booking = num
