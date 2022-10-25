@@ -14,11 +14,11 @@
 								<group>
 									<field name="title"/>
 									<field name="author"/>
-									<field name="editorial"/>
+									<field name="editorial" placeholder="Example: TUSQUETS EDITORES"/>
 								</group>
 								<group>
 									<field name="year"/>
-									<field name="pages"/>
+									<field name="pages" />
 									<field name="book" />
 								</group>
 							</group>
@@ -27,6 +27,7 @@
                         			<field name="synopsis"/>
                         		</page>
                         		<page string="Categories" name="categories">
+                        			<label for="categ_ids" string="All categories"/>
                         			<field name="categ_ids" widget="many2many_tags"/>
                         		</page>
                         		<page string="Reviews" name="reviews">

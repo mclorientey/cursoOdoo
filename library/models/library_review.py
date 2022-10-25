@@ -23,7 +23,6 @@ class libraryReview(models.Model):
     text = fields.Html('Review', help='You can compose a text with the review of the book')
     rating = fields.Selection([('0','Not reviewed'),('1','Very Bad'),('2','Bad'),('3','Normal'),('4','Good'),('5','Very Good')])
     
-    
     @api.depends('employee_id','book_id')
     def _calculate_name(self):
         for record in self:
