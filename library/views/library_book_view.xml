@@ -58,6 +58,23 @@
 					</tree>
 				</field>
 			</record>
+			
+			<record id="library_book_search_view" model="ir.ui.view">
+				<field name="name">Library Book Search view</field>
+				<field name="model">library.book</field>
+				<field name="arch" type="xml">
+					<search string="Search Books">
+						<field name="title" />
+						<field name="author" />
+						<filter string="Big book" domain="[('pages','>=',300)]" name="big_book" />
+						<filter string="Thin book" domain="[('pages','&lt;',300)]" name="thin_book" />
+						<group string="Group by">
+							<filter string="By Year" name="year_group" context="{'group_by':'year'}" />
+							<filter string="By author" name="author_group" context="{'group_by':'author'}" />
+						</group>
+					</search>
+				</field>
+			</record>
 		</data>
 </odoo>
 
