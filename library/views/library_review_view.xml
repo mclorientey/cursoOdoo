@@ -34,6 +34,24 @@
 					</tree>
 				</field>
 			</record>
+			
+			<record id="library_review_search_view" model="ir.ui.view">
+				<field name="name">Library Review Search view</field>
+				<field name="model">library.review</field>
+				<field name="arch" type="xml">
+					<search string="Search Reviews">
+						<field name="book_id" filter_domain="[('book_id.title','ilike',self)]"/>
+						<field name="employee_id" filter_domain="[('employee_id.name','ilike',self)]"/>
+						<filter string="Approved" domain="['|','|',('rating','=','3'),('rating','=','4'),('rating','=','5')]" name="approved" />
+						<filter string="Not approved" domain="['|','|',('rating','=','2'),('rating','=','1'),('rating','=','0')]" name="not_approved" />
+						<group string="Group by">
+							<filter string="By rating" name="rating_group" context="{'group_by':'rating'}" />
+							<filter string="By employee" name="employee_id_group" context="{'group_by':'employee_id'}" />
+							<filter string="By book" name="book_id_group" context="{'group_by':'book_id'}" />
+						</group>
+					</search>
+				</field>
+			</record>
 		</data>
 </odoo>
 

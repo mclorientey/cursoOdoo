@@ -3,6 +3,7 @@
 	<record model="ir.actions.act_window" id="library_booking_action">
 		<field name="name">Booking Access</field>
 		<field name="res_model">library.booking</field>
+		<field name="search_view_id" ref="library_booking_search_view"/>
 		<field name="view_mode">tree,form</field>
 	</record>
 
@@ -23,6 +24,7 @@
 	<record model="ir.actions.act_window" id="library_review_action">
 		<field name="name">Review Access</field>
 		<field name="res_model">library.review</field>
+		<field name="search_view_id" ref="library_review_search_view"/>
 		<field name="view_mode">tree,form</field>
 	</record>
 	

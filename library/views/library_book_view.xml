@@ -64,8 +64,8 @@
 				<field name="model">library.book</field>
 				<field name="arch" type="xml">
 					<search string="Search Books">
-						<field name="title" />
-						<field name="author" />
+						<field name="title" filter_domain="[('title','ilike',self)]"/>
+						<field name="author" filter_domain="[('author','ilike',self)]"/>
 						<filter string="Big book" domain="[('pages','>=',300)]" name="big_book" />
 						<filter string="Thin book" domain="[('pages','&lt;',300)]" name="thin_book" />
 						<group string="Group by">
