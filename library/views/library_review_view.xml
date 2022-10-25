@@ -50,6 +50,9 @@
 							<filter string="By book" name="book_id_group" context="{'group_by':'book_id'}" />
 						</group>
 					</search>
+					<searchpanel>
+						<field name="employee_id" />
+					</searchpanel>
 				</field>
 			</record>
 		</data>

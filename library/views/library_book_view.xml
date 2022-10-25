@@ -72,6 +72,9 @@
 							<filter string="By Year" name="year_group" context="{'group_by':'year'}" />
 							<filter string="By author" name="author_group" context="{'group_by':'author'}" />
 						</group>
+						<searchpanel>
+							<field name="year" />
+						</searchpanel>
 					</search>
 				</field>
 			</record>

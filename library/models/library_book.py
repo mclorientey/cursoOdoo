@@ -58,4 +58,4 @@ class libraryBook(models.Model):
             num_books = self.env['library.book'].search_count([('title','=',self.title),('year','=', self.year),('id','!=',self.id)])
             if num_books > 0:
                 raise ValidationError("You can't create a book with this title and year")
-    
+            

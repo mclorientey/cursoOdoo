@@ -23,9 +23,6 @@
 									<field name="book_id" options="{'no_create_edit':True,'no_quick_create':True,'no_create':True,'no_open':True}"/>
 									<field name="state" widget="selection_badge"/>
 								</group>
-								<group>
-									<field name="notes" attrs="{'invisible': [('state','!=','draft')]}"/>
-								</group>
 							</group>
 						</sheet>
 					</form>
