@@ -23,7 +23,7 @@ class libraryBooking(models.Model):
     end_date = fields.Date('End date', help='The end date of reservation',required=True)
     state = fields.Selection ([('draft','Draft'),('approved','Approved'),('reserved','Reserved'),('expired','Expired'),('reject','Reject')], default="draft")
     #categ_id = fields.Integer('Categ Hidden field', compute='_calculate_categ_id')
-    notes= fields.Text('Notes') 
+    notes= fields.Text('Notes',required=True) 
     num_employee = fields.Integer('Employees', compute='_get_num_employees')
     num_book = fields.Integer('Books', compute='_get_num_employee_books')
     
