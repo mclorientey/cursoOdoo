@@ -21,9 +21,9 @@ class libraryBooking(models.Model):
     book_id = fields.Many2one('library.book','Book',help='The book for booking', required=True, domain="[('categ_ids','in',category_id)]")
     start_date = fields.Date('Start date', help='The start date of reservation',default=fields.Date.context_today,required=True)
     end_date = fields.Date('End date', help='The end date of reservation',required=True)
-    state = fields.Selection ([('draft','Draft'),('approved','Approved'),('reserved','Reserved'),('expired','Expired'),('reject','Reject')], default="draft")
+    state = fields.Selection ([('draft',_('Draft')),('approved',_('Approved')),('reserved',_('Reserved')),('expired',_('Expired')),('reject',_('Reject'))], default="draft")
     #categ_id = fields.Integer('Categ Hidden field', compute='_calculate_categ_id')
-    notes= fields.Text('Notes',required=True) 
+    notes= fields.Text('Notes', required=True) 
     num_employee = fields.Integer('Employees', compute='_get_num_employees')
     num_book = fields.Integer('Books', compute='_get_num_employee_books')
     
