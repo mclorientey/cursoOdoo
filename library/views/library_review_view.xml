@@ -7,6 +7,12 @@
 				<field name="arch" type="xml">
 					<form string="Library Review" edit="0" duplicate="0">
 						<sheet>
+							<div class="oe_button_box" name="button_box">
+                            	<button class="oe_stat_button" name="view_all_employees"
+                                	type="object" icon="fa-user">
+                                	<field string="Employees" name="num_employee" widget="statinfo" /> 
+                                </button>
+                        	</div>
 							<group>
 								<field name="employee_id" widget="many2one_avatar_employee"/>
 								<field name="book_id" options="{'no_create_edit':True,'no_quick_create':True,'no_create':True,'no_open':True}"/>

@@ -22,6 +22,7 @@ class libraryReview(models.Model):
     book_id = fields.Many2one('library.book','Book',help='The book for booking', required=True)
     text = fields.Html('Review', help='You can compose a text with the review of the book')
     rating = fields.Selection([('0','Not reviewed'),('1','Very Bad'),('2','Bad'),('3','Normal'),('4','Good'),('5','Very Good')])
+    num_employee = fields.Integer('Employees', compute='_get_num_employees')
     
     @api.depends('employee_id','book_id')
     def _calculate_name(self):
@@ -33,3 +34,21 @@ class libraryReview(models.Model):
             if record.book_id and record.book_id.name:
                 value += record.book_id.name
             record.name = value
+            
+    def view_all_employees(self):
+        self.ensure_one()
+        ids = self.env['library.review'].read_group([ ("book_id", "=", self.book_id.id)], fields=['employee_id'], groupby=['employee_id'])
+        list = []
+        for id in ids:
+            list.append(id['employee_id'][0])
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Employees',
+            'view_mode': 'tree',
+            'res_model': 'hr.employee',
+            'domain': [('id', 'in', list)],
+        }
+        
+    def _get_num_employees(self):
+        ids = self.env['library.review'].read_group([ ("book_id", "=", self.book_id.id)], fields=['employee_id'], groupby=['employee_id'])
+        self.num_employee = len(ids) or 0
