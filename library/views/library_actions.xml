@@ -25,7 +25,7 @@
 		<field name="name">Review Access</field>
 		<field name="res_model">library.review</field>
 		<field name="search_view_id" ref="library_review_search_view"/>
-		<field name="view_mode">tree,form</field>
+		<field name="view_mode">tree,form,kanban</field>
 	</record>
 	
 	
