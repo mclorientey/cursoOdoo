@@ -4,7 +4,7 @@
 		<field name="name">Booking Access</field>
 		<field name="res_model">library.booking</field>
 		<field name="search_view_id" ref="library_booking_search_view"/>
-		<field name="view_mode">tree,form</field>
+		<field name="view_mode">tree,form,kanban</field>
 	</record>
 
 	<record model="ir.actions.act_window" id="library_book_category_action">
