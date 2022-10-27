@@ -29,6 +29,7 @@
         'security/ir.model.access.csv', 
         'views/library_actions.xml',
         'views/library_menus.xml',
+        'report/library_book_report.xml',
     ],
     'qweb': [
         
