@@ -15,7 +15,7 @@
     'version': '14.0.2.0.0',
     'installable': True,
     'application': True,
-    'depends': ['base','mail', 'hr'
+    'depends': ['base','mail', 'hr', 'product'
                 ],
     
     # always loaded
@@ -25,6 +25,7 @@
         'views/library_booking_view.xml',
         'views/library_category_book_view.xml',
         'views/library_review_view.xml',
+        'views/product_template_view.xml',
         'security/ir.model.access.csv', 
         'views/library_actions.xml',
         'views/library_menus.xml',
