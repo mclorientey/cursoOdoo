@@ -1,2 +1,4 @@
 /library/__pycache__/*.pyc
 /library/models/__pycache__/*.pyc
+/library/migrations/14.0.2.0.0/__pycache__/*.pyc
+/library/views/*.bak

@@ -1,0 +1,677 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* library
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-25 21:54+0000\n"
+"PO-Revision-Date: 2022-10-26 00:09+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.1\n"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_form_view
+msgid "All categories"
+msgstr "Todas las categorías"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__categ_ids
+msgid "All teh categories of the book"
+msgstr "Todas las categorías del libro"
+
+#. module: library
+#: code:addons/library/models/library_booking.py:0
+#: model_terms:ir.ui.view,arch_db:library.library_review_search_view
+#, python-format
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_booking__state__approved
+msgid "Aprobado"
+msgstr "Aprobado"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__author
+msgid "Author"
+msgstr "Autor"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_review__rating__2
+msgid "Bad"
+msgstr "Mal"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_search_view
+msgid "Big book"
+msgstr "Libro gordo"
+
+#. module: library
+#: model:ir.model,name:library.model_library_book
+#: model:ir.model.fields,field_description:library.field_library_booking__book_id
+#: model:ir.model.fields,field_description:library.field_library_review__book_id
+#: model:ir.ui.menu,name:library.library_book
+msgid "Book"
+msgstr "Libro"
+
+#. module: library
+#: model:ir.actions.act_window,name:library.library_book_action
+msgid "Book Access"
+msgstr "Acceso a libro"
+
+#. module: library
+#: model:ir.model,name:library.model_library_book_category
+msgid "Book Categories"
+msgstr "Categorías de libro"
+
+#. module: library
+#: model:ir.ui.menu,name:library.library_book_category
+msgid "Book Category"
+msgstr "Categoría de libro"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__book
+msgid "Book File"
+msgstr "Fichero para el libro"
+
+#. module: library
+#: model:ir.ui.menu,name:library.library_booking
+msgid "Booking"
+msgstr "Reservar"
+
+#. module: library
+#: model:ir.actions.act_window,name:library.library_booking_action
+msgid "Booking Access"
+msgstr "Acceso a reservas"
+
+#. module: library
+#: model:ir.model,name:library.model_library_booking
+msgid "Booking books"
+msgstr "Reservar libros"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__num_booking
+#: model_terms:ir.ui.view,arch_db:library.library_book_form_view
+msgid "Bookings"
+msgstr "Reservas"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_booking__num_book
+#: model_terms:ir.ui.view,arch_db:library.library_book_tree_view
+#: model_terms:ir.ui.view,arch_db:library.library_booking_form_view
+msgid "Books"
+msgstr "Libros"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_search_view
+msgid "By Year"
+msgstr "Por año"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_search_view
+msgid "By author"
+msgstr "Por autor"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_booking_search_view
+#: model_terms:ir.ui.view,arch_db:library.library_review_search_view
+msgid "By book"
+msgstr "Por libro"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_booking_search_view
+#: model_terms:ir.ui.view,arch_db:library.library_review_search_view
+msgid "By employee"
+msgstr "Por empleado"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_review_search_view
+msgid "By rating"
+msgstr "Por puntuación"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_booking_search_view
+msgid "By state"
+msgstr "Por estado"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__categ_ids
+#: model_terms:ir.ui.view,arch_db:library.library_book_form_view
+msgid "Categories"
+msgstr "Categorias"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_booking__category_id
+msgid "Category"
+msgstr "Categoría"
+
+#. module: library
+#: model:ir.actions.act_window,name:library.library_book_category_action
+msgid "Category Book Access"
+msgstr "Acceso a categoría del libro"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_booking__category_id
+msgid "Category to filter books"
+msgstr "Categoría por la que filtrar el libro"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_review__name
+msgid "Computed field with Book and Employee"
+msgstr "Campo computado con libro y empleado"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_booking__name
+msgid "Computed field with employee and book name"
+msgstr "Campo computado con los nombres de empleado y libro"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__name
+msgid "Computed field with title and author"
+msgstr "Campo computado con el título y el autor"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__create_uid
+#: model:ir.model.fields,field_description:library.field_library_book_category__create_uid
+#: model:ir.model.fields,field_description:library.field_library_booking__create_uid
+#: model:ir.model.fields,field_description:library.field_library_review__create_uid
+#: model:ir.model.fields,field_description:library.field_library_test_model__create_uid
+#: model:ir.model.fields,field_description:library.field_library_test_model_dos__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__create_date
+#: model:ir.model.fields,field_description:library.field_library_book_category__create_date
+#: model:ir.model.fields,field_description:library.field_library_booking__create_date
+#: model:ir.model.fields,field_description:library.field_library_review__create_date
+#: model:ir.model.fields,field_description:library.field_library_test_model__create_date
+#: model:ir.model.fields,field_description:library.field_library_test_model_dos__create_date
+msgid "Created on"
+msgstr "Creado a"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_test_model__f_selection__4
+msgid "Cuarto valor"
+msgstr "Cuarto valor"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__display_name
+#: model:ir.model.fields,field_description:library.field_library_book_category__display_name
+#: model:ir.model.fields,field_description:library.field_library_booking__display_name
+#: model:ir.model.fields,field_description:library.field_library_review__display_name
+#: model:ir.model.fields,field_description:library.field_library_test_model__display_name
+#: model:ir.model.fields,field_description:library.field_library_test_model_dos__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: library
+#: code:addons/library/models/library_booking.py:0
+#: model:ir.model.fields.selection,name:library.selection__library_booking__state__draft
+#, python-format
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__editorial
+msgid "Editorial"
+msgstr "Editorial"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__editorial
+msgid "Editorial of the book"
+msgstr "Editorial del libro"
+
+#. module: library
+#: model:ir.model,name:library.model_library_test_model
+#: model:ir.model,name:library.model_library_test_model_dos
+msgid "Ejemplo de campos"
+msgstr "Ejemplo de campos"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_booking__employee_id
+#: model:ir.model.fields,field_description:library.field_library_review__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_booking__employee_id
+#: model:ir.model.fields,help:library.field_library_review__employee_id
+msgid "Employee name"
+msgstr "Nombre de empleado"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_booking__num_employee
+#: model:ir.model.fields,field_description:library.field_library_review__num_employee
+#: model_terms:ir.ui.view,arch_db:library.library_booking_form_view
+#: model_terms:ir.ui.view,arch_db:library.library_review_form_view
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_booking__end_date
+msgid "End date"
+msgstr "Fecha de fin"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_booking_search_view
+msgid "End today"
+msgstr "Acaba hoy"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_form_view
+msgid "Example: TUSQUETS EDITORES"
+msgstr "Ejemplo: TUSQUETS EDITORES"
+
+#. module: library
+#: code:addons/library/models/library_booking.py:0
+#: model:ir.model.fields.selection,name:library.selection__library_booking__state__expired
+#, python-format
+msgid "Expired"
+msgstr "Caducado"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_selection
+msgid "F Selection"
+msgstr "Selección F"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_binary
+msgid "Field Binary"
+msgstr "Campo binario"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_boolean
+msgid "Field Booleano"
+msgstr "Campo booleano"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_date
+msgid "Field Date"
+msgstr "Campo fecha"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_datetime
+msgid "Field Datetime"
+msgstr "Campo fecha y hora"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_float
+msgid "Field Float"
+msgstr "Campo Float"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_integer
+msgid "Field Integer"
+msgstr "Campo Entero"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_combo
+msgid "Field Many2one"
+msgstr "Campo Many2one"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_tabla
+msgid "Field One2many"
+msgstr "Campo One2many"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__name
+#: model:ir.model.fields,field_description:library.field_library_test_model_dos__name
+msgid "Field Short Text"
+msgstr "Campo texto corto"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_text
+msgid "Field Text"
+msgstr "Campo texto"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_html
+msgid "Field WYSIWYG"
+msgstr "Campo WYSIWYG"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_computed
+msgid "Field computed"
+msgstr "Campo computado"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model__f_related
+msgid "Field related"
+msgstr "Campo related"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__book
+msgid "File with the book"
+msgstr "Fichero con el libro"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_review__rating__4
+msgid "Good"
+msgstr "Bien"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_search_view
+#: model_terms:ir.ui.view,arch_db:library.library_booking_search_view
+#: model_terms:ir.ui.view,arch_db:library.library_review_search_view
+msgid "Group by"
+msgstr "Agrupado por"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__id
+#: model:ir.model.fields,field_description:library.field_library_book_category__id
+#: model:ir.model.fields,field_description:library.field_library_booking__id
+#: model:ir.model.fields,field_description:library.field_library_review__id
+#: model:ir.model.fields,field_description:library.field_library_test_model__id
+#: model:ir.model.fields,field_description:library.field_library_test_model_dos__id
+msgid "ID"
+msgstr "ID"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book____last_update
+#: model:ir.model.fields,field_description:library.field_library_book_category____last_update
+#: model:ir.model.fields,field_description:library.field_library_booking____last_update
+#: model:ir.model.fields,field_description:library.field_library_review____last_update
+#: model:ir.model.fields,field_description:library.field_library_test_model____last_update
+#: model:ir.model.fields,field_description:library.field_library_test_model_dos____last_update
+msgid "Last Modified on"
+msgstr "Última modificación a las"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__write_uid
+#: model:ir.model.fields,field_description:library.field_library_book_category__write_uid
+#: model:ir.model.fields,field_description:library.field_library_booking__write_uid
+#: model:ir.model.fields,field_description:library.field_library_review__write_uid
+#: model:ir.model.fields,field_description:library.field_library_test_model__write_uid
+#: model:ir.model.fields,field_description:library.field_library_test_model_dos__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__write_date
+#: model:ir.model.fields,field_description:library.field_library_book_category__write_date
+#: model:ir.model.fields,field_description:library.field_library_booking__write_date
+#: model:ir.model.fields,field_description:library.field_library_review__write_date
+#: model:ir.model.fields,field_description:library.field_library_test_model__write_date
+#: model:ir.model.fields,field_description:library.field_library_test_model_dos__write_date
+msgid "Last Updated on"
+msgstr "Última actualización a las"
+
+#. module: library
+#: model:ir.ui.menu,name:library.library_menu_root
+msgid "Library"
+msgstr "Biblioteca"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_form_view
+msgid "Library Book"
+msgstr "Libro de biblioteca"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_booking_form_view
+msgid "Library Booking"
+msgstr "Reservas de biblioteca"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_category_book_form_view
+msgid "Library Category Book"
+msgstr "Categoría de libro de biblioteca"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_review_form_view
+msgid "Library Review"
+msgstr "Reseña de libro de biblioteca"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_test_model_dos__f_many2one
+msgid "Many2one"
+msgstr "Many2one"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__name
+#: model:ir.model.fields,field_description:library.field_library_booking__name
+#: model:ir.model.fields,field_description:library.field_library_review__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book_category__name
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_review__rating__3
+msgid "Normal"
+msgstr "Normal"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_review_search_view
+msgid "Not approved"
+msgstr "Sin aprobar"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_review__rating__0
+msgid "Not reviewed"
+msgstr "Sin revisar"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_booking__notes
+msgid "Notes"
+msgstr "Notas"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__pages
+msgid "Number of pages"
+msgstr "Número de páginas"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__pages
+msgid "Number of pages of the book"
+msgstr "Número de páginas que tiene el libro"
+
+#. module: library
+#: model:ir.actions.server,name:library.constraint_create_book_same_title_and_year
+msgid "Number of same authors"
+msgstr "Número de autores"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__author
+msgid "Person who wrote the book"
+msgstr "Persona que escribió el libro"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_test_model__f_selection__1
+msgid "Primer valor"
+msgstr "Primer valor"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_test_model__f_selection__5
+msgid "Quinto valor"
+msgstr "Quinto valor"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_review__rating
+msgid "Rating"
+msgstr "Puntuación"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_booking__state__reject
+msgid "Rechazado"
+msgstr "Rechazado"
+
+#. module: library
+#: code:addons/library/models/library_booking.py:0
+#, python-format
+msgid "Reject"
+msgstr "Rechazado"
+
+#. module: library
+#: code:addons/library/models/library_booking.py:0
+#: model:ir.model.fields.selection,name:library.selection__library_booking__state__reserved
+#, python-format
+msgid "Reserved"
+msgstr "Reservado"
+
+#. module: library
+#: model:ir.model,name:library.model_library_review
+#: model:ir.model.fields,field_description:library.field_library_review__text
+#: model:ir.ui.menu,name:library.library_review
+msgid "Review"
+msgstr "Reseña"
+
+#. module: library
+#: model:ir.actions.act_window,name:library.library_review_action
+msgid "Review Access"
+msgstr "Acceso a reseñas"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_form_view
+#: model_terms:ir.ui.view,arch_db:library.library_review_tree_view
+msgid "Reviews"
+msgstr "Reseñas"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__reviews_id
+msgid "Reviews from book"
+msgstr "Reseñas de un libro"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_booking_search_view
+msgid "Search Bookings"
+msgstr "Búsqueda de reservas"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_search_view
+msgid "Search Books"
+msgstr "Búsqueda de libros"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_review_search_view
+msgid "Search Reviews"
+msgstr "Búsqueda de reseñas"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_test_model__f_selection__2
+msgid "Segundo valor"
+msgstr "Segundo valor"
+
+#. module: library
+#: model:ir.ui.menu,name:library.library_settings
+msgid "Settings"
+msgstr "Configuración"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_booking_search_view
+msgid "Start current Month"
+msgstr "Empieza el mes actual"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_booking__start_date
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_booking_search_view
+msgid "Start prev Month"
+msgstr "Empiezó el mes anterior"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_booking_search_view
+msgid "Start today"
+msgstr "Empieza hoy"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_booking__state
+msgid "State"
+msgstr "Estado"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__synopsis
+#: model_terms:ir.ui.view,arch_db:library.library_book_form_view
+msgid "Synopsis"
+msgstr "Sinopsis"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_test_model__f_selection__3
+msgid "Tercer valor"
+msgstr "Tercer valor"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_booking__book_id
+#: model:ir.model.fields,help:library.field_library_review__book_id
+msgid "The book for booking"
+msgstr "Libro para reservar"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_booking__end_date
+msgid "The end date of reservation"
+msgstr "Fecha fin de la reserva"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_booking__start_date
+msgid "The start date of reservation"
+msgstr "Fecha de inicio de la reserva"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_book_search_view
+msgid "Thin book"
+msgstr "Libro fino"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__title
+msgid "Title"
+msgstr "Título"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__title
+msgid "Title of the book"
+msgstr "Título del libro"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_review__rating__1
+msgid "Very Bad"
+msgstr "Muy Mal"
+
+#. module: library
+#: model:ir.model.fields.selection,name:library.selection__library_review__rating__5
+msgid "Very Good"
+msgstr "Muy bien"
+
+#. module: library
+#: model:ir.model.fields,field_description:library.field_library_book__year
+msgid "Year"
+msgstr "Año"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__year
+msgid "Year of creation since 2016 to now"
+msgstr "Año de creación desde 2016 hasta ahora"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_review__text
+msgid "You can compose a text with the review of the book"
+msgstr "Puedes escribir un texto con la reseña del libro"
+
+#. module: library
+#: model:ir.model.fields,help:library.field_library_book__synopsis
+msgid "You can compose a text with the synopsis of the book"
+msgstr "Puedes escribir un texto con la sinopsis del libro"
+
+#. module: library
+#: code:addons/library/models/library_book.py:0
+#, python-format
+msgid "You can't create a book with this title and year"
+msgstr "No puedes crear un libro con este titulo y año"
+
+#. module: library
+#: model_terms:ir.ui.view,arch_db:library.library_review_tree_view
+msgid "stars"
+msgstr "estrellas"
