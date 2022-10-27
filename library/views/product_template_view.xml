@@ -12,7 +12,10 @@
 					<!-- field name="barcode" position="after">
 						<field name="book_id"/>
 					</field-->
-					<field name="type" position="before">
+					<!-- field name="type" position="before">
+						<field name="book_id"/>
+					</field-->
+					<field name="categ_id" position="after">
 						<field name="book_id"/>
 					</field>
 				</field>
