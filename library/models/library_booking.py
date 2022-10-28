@@ -115,7 +115,7 @@ class libraryBooking(models.Model):
         self.write({'state':'approved'})
     
     def btn_state_approve_to_reserve(self):
-        new_end_date = self._calculate_end_date(vals['start_date'])
+        new_end_date = self._calculate_end_date(self.start_date)
         self.write({'state':'reserved', 'end_date':new_end_date})
     
     def btn_state_approve_to_reject(self):
