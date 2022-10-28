@@ -127,4 +127,9 @@ class libraryBooking(models.Model):
     
     def btn_state_reserve_to_expired(self):
         self.write({'state':'expired'})
+        
+    def automated_expiration(self):
+        bookings = self.env['library.booking'].search([('state','=','reserved'),('end_date','<',fields.date.today())])
+        bookings.write({'state':'expired'})
+        
     
