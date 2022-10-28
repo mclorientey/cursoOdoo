@@ -26,6 +26,7 @@ class libraryBooking(models.Model):
     notes= fields.Text('Notes', required=True) 
     num_employee = fields.Integer('Employees', compute='_get_num_employees')
     num_book = fields.Integer('Books', compute='_get_num_employee_books')
+    num_bookings = fields.Selection ([('1',_('1 Reserve')),('2',_('2 Reserve')),('3',_('3 Reserve'))], default="1")
     
     
     @api.depends('book_id','employee_id')
@@ -109,4 +110,21 @@ class libraryBooking(models.Model):
     def _get_num_employee_books(self):
         ids = self.env['library.booking'].read_group([ ("employee_id", "=", self.employee_id.id)], fields=['book_id'], groupby=['book_id'])
         self.num_book = len(ids) or 0
+        
+    def btn_state_darft_to_approve(self):
+        self.write({'state':'approved'})
+    
+    def btn_state_approve_to_reserve(self):
+        new_end_date = self._calculate_end_date(vals['start_date'])
+        self.write({'state':'reserved', 'end_date':new_end_date})
+    
+    def btn_state_approve_to_reject(self):
+        self.write({'state':'reject'})
+    
+    def btn_state_reserve_to_reserve(self):
+        value = int(self.num_bookings) + 1
+        self.write({'num_bookings':str(value)})
+    
+    def btn_state_reserve_to_expired(self):
+        self.write({'state':'expired'})
     
