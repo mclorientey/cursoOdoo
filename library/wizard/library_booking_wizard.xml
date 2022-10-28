@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+       	<!-- conosur.compound.attribute.value.wizard-->
+        <!-- Form -->
+        <record model="ir.ui.view" id="library_booking_wizard_view">
+            <field name="name">Library Booking Wizard View</field>
+            <field name="model">library.booking.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Change booking notes by state">
+                    <sheet>
+                        <group>
+                            <field name="text"  />
+                            <field name="choose_state"  />
+                        </group>
+                    </sheet>
+                    <footer>
+						<button string="Cancel" class="btn-default" special="cancel"/>
+						<button name="addTextToNotes" string="Change notes" type="object" class="btn-primary"/>
+					</footer>
+                </form>
+            </field>
+        </record>
+        
+</odoo>
