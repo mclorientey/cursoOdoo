@@ -28,6 +28,7 @@
             name="Settings"
             parent="library_menu_root"
             sequence="2" 
+            groups="library.library_admin_group"
             /> 
             
         <menuitem 
@@ -35,6 +36,7 @@
         	name="Book Category"
         	parent="library_settings" 
         	action="library_book_category_action"
+        	groups="library.library_admin_group"
          	sequence="1"/>
          	
          <menuitem 
@@ -42,6 +44,7 @@
         	name="Book"
         	parent="library_settings" 
         	action="library_book_action"
+        	groups="library.library_admin_group"
          	sequence="2"/>
 </odoo>
 

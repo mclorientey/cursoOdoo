@@ -17,7 +17,7 @@
 						<sheet>
 							<div class="oe_button_box" name="button_box">
                             	<button class="oe_stat_button" name="view_all_employees"
-                                	type="object" icon="fa-user">
+                                	type="object" icon="fa-user" groups="library.library_admin_group">
                                 	<field string="Employees" name="num_employee" widget="statinfo" /> 
                                 </button>
                                 <button class="oe_stat_button" name="view_all_books_employee"
