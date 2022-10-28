@@ -4,3 +4,4 @@ access_book_category,library_access_book_category,model_library_book_category,ba
 access_book,library_access_book,model_library_book,base.group_user,1,1,1,1
 access_review,library_access_review,model_library_review,base.group_user,1,1,1,1
 access_booking_wizard,library_access_booking_wizard,model_library_booking_wizard,base.group_user,1,1,1,1
+access_booking_report_wizard,library_access_booking_report_wizard,model_library_booking_report_wizard,base.group_user,1,1,1,1

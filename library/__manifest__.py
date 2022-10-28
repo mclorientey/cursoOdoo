@@ -29,6 +29,7 @@
         'report/library_booking_report.xml',
         'report/library_book_report.xml',
         'wizard/library_booking_wizard.xml',
+        'wizard/library_booking_report_wizard.xml',
         'security/ir.model.access.csv', 
         'views/library_actions.xml',
         'views/library_menus.xml',

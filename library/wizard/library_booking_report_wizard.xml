@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+       	<!-- conosur.compound.attribute.value.wizard-->
+        <!-- Form -->
+        <record model="ir.ui.view" id="library_booking_report_wizard_view">
+            <field name="name">Library Booking Report Wizard View</field>
+            <field name="model">library.booking.report.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Launch report from wizard">
+                    <sheet>
+                        <group>
+                            <field name="start_date"  />
+                        </group>
+                    </sheet>
+                    <footer>
+						<button string="Cancel" class="btn-default" special="cancel"/>
+						<button name="launchReport" string="Get report" type="object" class="btn-primary"/>
+					</footer>
+                </form>
+            </field>
+        </record>
+        
+</odoo>
