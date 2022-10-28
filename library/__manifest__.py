@@ -26,10 +26,13 @@
         'views/library_category_book_view.xml',
         'views/library_review_view.xml',
         'views/product_template_view.xml',
+        'report/library_booking_report.xml',
+        'report/library_book_report.xml',
+        'wizard/library_booking_wizard.xml',
         'security/ir.model.access.csv', 
         'views/library_actions.xml',
         'views/library_menus.xml',
-        'report/library_book_report.xml',
+
     ],
     'qweb': [
         
