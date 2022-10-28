@@ -23,4 +23,19 @@
 		<field name="implied_ids" eval="[(4, ref('library.library_approver_group')), (4, ref('stock.group_stock_manager')), (4, ref('hr.group_hr_manager'))]" />
 		<field name="category_id" ref="library.library_category_for_groups" />
 	</record>
+	
+	<record id="library_all_bookings" model="ir.rule">
+        <field name="name">View all bookings</field>
+        <field name="model_id" ref="library.model_library_booking"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('library.library_approver_group'))]"/>
+    </record>
+    
+    <record id="library_only_my_bookings" model="ir.rule">
+        <field name="name">View only my bookings</field>
+        <field name="model_id" ref="library.model_library_booking"/>
+        <field name="domain_force">[('create_uid', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('library.library_user_group'))]"/>
+    </record>
+	
 </odoo>
